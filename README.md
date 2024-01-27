@@ -6,7 +6,7 @@ This Terraform module automates the deployment of an S3 bucket on AWS.
 ## Features
 
 - **Easy Configuration**: Simple variables allow customization of AWS region, S3 bucket name, access control list (ACL), and versioning.
-- **Scalable and Secure**: Leverage AWS S3 to store and manage your data, ensuring scalability and security.
+- **Scalable and Secure**: AWS S3 to store and manage your data, ensuring scalability and security.
 - **Git Integration**: Easily integrate this module into your Terraform configurations using Git.
 
 ## Usage
