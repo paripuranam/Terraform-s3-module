@@ -14,11 +14,12 @@ This Terraform module automates the deployment of an S3 bucket on AWS.
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/s3-bucket.git
+   git clone https://github.com/paripuranam/Terraform-s3-module
    
 2. Configure the Module:
 
    Edit your Terraform configuration file (`main.tf`) to include the module:
+   ```
    provider "aws" {
     region = "us-east-1"
    }
@@ -29,27 +30,35 @@ This Terraform module automates the deployment of an S3 bucket on AWS.
     Bucket_acl = "public-read"
     versioning = false
    }
+   ```
    
-3. Apply the Configuration:
+4. Apply the Configuration:
 
    Run the following Terraform commands:
-
-     terraform init
+```
+   terraform init
+```
+```
+   terraform plan
+```
+```
    terraform apply
+```
    
-4. Clean Up:
+5. Clean Up:
 
    When you no longer need the resources, run:
-
+```
      terraform destroy
+```
    
 ## Module Structure
->terraform s3 module
-  >example
-    - main.tf: configure the aws provider and attach the module path.
-    - outputs.tf: Exposes output values, such as the created S3 bucket ID, bucket arn, bucket dns.
-- main.tf: defines the S3 bucket resource.
-- variables.tf: Declares input variables for customization.
-- outputs.tf: Exposes output values, such as the created S3 bucket ID, bucket arn, bucket dns.
-- README.md: Provides comprehensive usage instructions and information about the module.
-
+```plaintext
+terraform-s3-module/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── README.md
+└── example/
+   ├── main.tf
+   └── outputs.tf
