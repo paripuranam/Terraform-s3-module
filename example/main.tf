@@ -4,7 +4,7 @@ provider "aws" {
 
 module "s3_bucket" {
   source      = "github.com/paripuranam/Terraform-s3-module"
-  Bucket = "module-bucket-3124211"
-  Bucket_acl = "public-read"
-  versioning = false
+  Bucket      = "Unique bucket name"
+  Bucket_acl  = "public-read"
+  versioning  = true
 }
